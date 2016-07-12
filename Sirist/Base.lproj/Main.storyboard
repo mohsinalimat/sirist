@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oPH-ft-buR">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sirist-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sirist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q9Q-2P-u3I">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sirist will periodically import your iOS Reminders into Todoist" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHd-Cb-8D8">
+                                        <rect key="frame" x="8" y="37" width="584" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="DVc-6v-ehb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" red="0.34380918560606055" green="0.34380918560606055" blue="0.34380918560606055" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sit back &amp; relax..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2l-iA-dUu">
+                                        <rect key="frame" x="8" y="8" width="584" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="7hd-zv-XQ8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you can't wait..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eo9-CF-SBL">
+                                        <rect key="frame" x="8" y="503" width="167" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="167" id="DDZ-Jv-jHE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKN-XQ-Svp">
+                                        <rect key="frame" x="430" y="498" width="162" height="30"/>
+                                        <state key="normal" title="Import Reminders Now!"/>
+                                        <connections>
+                                            <action selector="touchImportReminders:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GET-Aa-6ci"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a-bigger-splash" translatesAutoresizingMaskIntoConstraints="NO" id="iC0-HT-skz">
+                                        <rect key="frame" x="175" y="142" width="250" height="250"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="250" id="IOq-u3-ttY"/>
+                                            <constraint firstAttribute="width" secondItem="iC0-HT-skz" secondAttribute="height" multiplier="1:1" id="O6z-ie-vFR"/>
+                                            <constraint firstAttribute="width" constant="250" id="g8r-Rz-YQe"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You may leave the app at your leisure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jH-Rp-yxD">
+                                        <rect key="frame" x="8" y="103" width="584" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="cB6-fN-V9y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                        <color key="textColor" red="0.34380918560000001" green="0.34380918560000001" blue="0.34380918560000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A Bigger Splash by David Hockney" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mq-d4-dbI">
+                                        <rect key="frame" x="175" y="400" width="250" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="Wem-hX-waA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="5jH-Rp-yxD" firstAttribute="trailing" secondItem="UKN-XQ-Svp" secondAttribute="trailing" id="0Ci-Zg-3Av"/>
+                                    <constraint firstItem="5jH-Rp-yxD" firstAttribute="centerX" secondItem="iC0-HT-skz" secondAttribute="centerX" id="1YY-EJ-FQR"/>
+                                    <constraint firstItem="iC0-HT-skz" firstAttribute="top" secondItem="5jH-Rp-yxD" secondAttribute="bottom" constant="8" symbolic="YES" id="2ng-lb-S4L"/>
+                                    <constraint firstItem="q2l-iA-dUu" firstAttribute="trailing" secondItem="q9Q-2P-u3I" secondAttribute="trailingMargin" id="5fG-uk-lha"/>
+                                    <constraint firstItem="fHd-Cb-8D8" firstAttribute="leading" secondItem="5jH-Rp-yxD" secondAttribute="leading" id="9Ky-5c-iVR"/>
+                                    <constraint firstItem="q2l-iA-dUu" firstAttribute="leading" secondItem="fHd-Cb-8D8" secondAttribute="leading" id="BXn-39-vSr"/>
+                                    <constraint firstItem="5jH-Rp-yxD" firstAttribute="top" secondItem="fHd-Cb-8D8" secondAttribute="bottom" constant="17" id="CuV-kL-8s2"/>
+                                    <constraint firstItem="5jH-Rp-yxD" firstAttribute="leading" secondItem="eo9-CF-SBL" secondAttribute="leading" id="Dmh-Ut-i8p"/>
+                                    <constraint firstAttribute="bottom" secondItem="eo9-CF-SBL" secondAttribute="bottom" constant="12" id="O57-9o-21O"/>
+                                    <constraint firstItem="5mq-d4-dbI" firstAttribute="top" secondItem="iC0-HT-skz" secondAttribute="bottom" constant="8" symbolic="YES" id="OB6-Sq-mly"/>
+                                    <constraint firstItem="iC0-HT-skz" firstAttribute="trailing" secondItem="5mq-d4-dbI" secondAttribute="trailing" id="Z9r-OZ-NPI"/>
+                                    <constraint firstItem="iC0-HT-skz" firstAttribute="leading" secondItem="5mq-d4-dbI" secondAttribute="leading" id="cLw-kE-7hV"/>
+                                    <constraint firstItem="q2l-iA-dUu" firstAttribute="leading" secondItem="q9Q-2P-u3I" secondAttribute="leadingMargin" id="d11-kI-0yN"/>
+                                    <constraint firstItem="q2l-iA-dUu" firstAttribute="top" secondItem="q9Q-2P-u3I" secondAttribute="topMargin" id="eVi-wD-vxS"/>
+                                    <constraint firstItem="eo9-CF-SBL" firstAttribute="centerY" secondItem="UKN-XQ-Svp" secondAttribute="centerY" id="fJw-Ro-Pvm"/>
+                                    <constraint firstItem="fHd-Cb-8D8" firstAttribute="top" secondItem="q2l-iA-dUu" secondAttribute="bottom" constant="8" symbolic="YES" id="foj-bU-Gh7"/>
+                                    <constraint firstItem="q2l-iA-dUu" firstAttribute="trailing" secondItem="fHd-Cb-8D8" secondAttribute="trailing" id="jqw-3f-iZl"/>
+                                    <constraint firstItem="UKN-XQ-Svp" firstAttribute="bottom" secondItem="q9Q-2P-u3I" secondAttribute="bottomMargin" id="mwa-6m-7Qm"/>
+                                    <constraint firstItem="fHd-Cb-8D8" firstAttribute="trailing" secondItem="5jH-Rp-yxD" secondAttribute="trailing" id="tfr-Ri-Xop"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="q9Q-2P-u3I" secondAttribute="trailing" id="740-F6-7n4"/>
+                            <constraint firstItem="q9Q-2P-u3I" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="a4r-YU-c75"/>
+                            <constraint firstItem="q9Q-2P-u3I" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="ikX-bg-DPs"/>
+                            <constraint firstItem="q9Q-2P-u3I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ye4-oa-beh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sirist" id="18M-7t-oYg"/>
+                    <connections>
+                        <outlet property="appView" destination="q9Q-2P-u3I" id="6Ub-Di-nsN"/>
+                        <segue destination="rKU-tk-ecP" kind="show" identifier="showSetup" id="3gV-KA-ny4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362" y="62"/>
+        </scene>
+        <!--Sirist Authentication-->
+        <scene sceneID="x7q-MR-Kiu">
+            <objects>
+                <viewController id="Xiz-xN-zqH" customClass="AuthViewController" customModule="Sirist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zNn-Ll-FEg"/>
+                        <viewControllerLayoutGuide type="bottom" id="g8u-Bt-aNO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qqc-7h-2t8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sirist Authentication" id="TgS-Oq-ak1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UTm-qT-e5b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5503" y="626"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NZv-mx-79e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JjA-cA-1rM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a9q-Ln-lKQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xiz-xN-zqH" kind="relationship" relationship="rootViewController" id="vhQ-og-nFB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mXa-g8-lIg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4663" y="893"/>
+        </scene>
+        <!--Welcome-->
+        <scene sceneID="AcZ-64-P33">
+            <objects>
+                <viewController id="eGr-KA-sjb" customClass="SetupViewController" customModule="Sirist" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h6J-Xn-UjD"/>
+                        <viewControllerLayoutGuide type="bottom" id="da8-3K-mMD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SP0-DK-LpQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYq-l6-Bo0">
+                                <rect key="frame" x="20" y="72" width="560" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="vhD-8z-NMZ"/>
+                                </constraints>
+                                <string key="text">Sirist helps you bring in iOS Reminders into Todoist thus allowing you to use Siri with Todoist, but first there are a few steps to get things rolling...</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminders Access" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bti-Ig-R5x">
+                                <rect key="frame" x="20" y="160" width="560" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="O9f-2r-BzX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XoY-Q7-CPh">
+                                <rect key="frame" x="20" y="208" width="560" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cl5-os-Nvm"/>
+                                </constraints>
+                                <state key="normal" title="Authorize"/>
+                                <connections>
+                                    <action selector="touchRemindersAuthButton:" destination="eGr-KA-sjb" eventType="touchUpInside" id="rNf-m0-cof"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todoist Authentication" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFu-F7-rf0">
+                                <rect key="frame" x="20" y="276" width="560" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="p1k-9e-Xtp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTx-Ru-RXq">
+                                <rect key="frame" x="20" y="324" width="560" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Rjv-Tq-RS6"/>
+                                </constraints>
+                                <state key="normal" title="Authenticate"/>
+                                <connections>
+                                    <action selector="touchTodoistAuthButton:" destination="eGr-KA-sjb" eventType="touchUpInside" id="1Ty-K9-0vn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljx-tf-Q8a">
+                                <rect key="frame" x="0.0" y="557" width="600" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="ZQP-DI-HCR"/>
+                                </constraints>
+                                <state key="normal" title="Let's Go!"/>
+                                <connections>
+                                    <action selector="touchLetsGo:" destination="eGr-KA-sjb" eventType="touchUpInside" id="GOQ-OM-GRW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99411373612984677" green="0.94765499350712457" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jFu-F7-rf0" firstAttribute="top" secondItem="XoY-Q7-CPh" secondAttribute="bottom" constant="8" symbolic="YES" id="6If-so-Kaf"/>
+                            <constraint firstAttribute="trailing" secondItem="Ljx-tf-Q8a" secondAttribute="trailing" id="Bna-GN-xUx"/>
+                            <constraint firstItem="bTx-Ru-RXq" firstAttribute="centerX" secondItem="Ljx-tf-Q8a" secondAttribute="centerX" id="F8n-aQ-1ff"/>
+                            <constraint firstItem="jFu-F7-rf0" firstAttribute="trailing" secondItem="bTx-Ru-RXq" secondAttribute="trailing" id="Nzg-hq-YQb"/>
+                            <constraint firstItem="PYq-l6-Bo0" firstAttribute="trailing" secondItem="Bti-Ig-R5x" secondAttribute="trailing" id="WL4-wI-zEf"/>
+                            <constraint firstItem="PYq-l6-Bo0" firstAttribute="top" secondItem="h6J-Xn-UjD" secondAttribute="bottom" constant="8" symbolic="YES" id="X9U-9N-Z4h"/>
+                            <constraint firstItem="XoY-Q7-CPh" firstAttribute="leading" secondItem="jFu-F7-rf0" secondAttribute="leading" id="eEF-di-KPn"/>
+                            <constraint firstItem="Ljx-tf-Q8a" firstAttribute="bottom" secondItem="da8-3K-mMD" secondAttribute="top" id="fgh-1o-95A"/>
+                            <constraint firstItem="XoY-Q7-CPh" firstAttribute="top" secondItem="Bti-Ig-R5x" secondAttribute="bottom" constant="8" symbolic="YES" id="kRc-Sf-4Of"/>
+                            <constraint firstItem="Bti-Ig-R5x" firstAttribute="trailing" secondItem="XoY-Q7-CPh" secondAttribute="trailing" id="m0P-Ys-hIH"/>
+                            <constraint firstItem="PYq-l6-Bo0" firstAttribute="leading" secondItem="SP0-DK-LpQ" secondAttribute="leadingMargin" id="njN-sZ-BZG"/>
+                            <constraint firstItem="bTx-Ru-RXq" firstAttribute="top" secondItem="jFu-F7-rf0" secondAttribute="bottom" constant="8" symbolic="YES" id="q1h-tX-VJg"/>
+                            <constraint firstItem="Ljx-tf-Q8a" firstAttribute="leading" secondItem="SP0-DK-LpQ" secondAttribute="leading" id="vP9-Vk-hr6"/>
+                            <constraint firstItem="Bti-Ig-R5x" firstAttribute="top" secondItem="PYq-l6-Bo0" secondAttribute="bottom" constant="8" symbolic="YES" id="wGl-YK-SXQ"/>
+                            <constraint firstItem="PYq-l6-Bo0" firstAttribute="leading" secondItem="Bti-Ig-R5x" secondAttribute="leading" id="wH8-LS-AQK"/>
+                            <constraint firstItem="XoY-Q7-CPh" firstAttribute="trailing" secondItem="jFu-F7-rf0" secondAttribute="trailing" id="wo9-Nn-jt3"/>
+                            <constraint firstItem="Bti-Ig-R5x" firstAttribute="leading" secondItem="XoY-Q7-CPh" secondAttribute="leading" id="yiM-v8-N1O"/>
+                            <constraint firstItem="jFu-F7-rf0" firstAttribute="leading" secondItem="bTx-Ru-RXq" secondAttribute="leading" id="yyr-ov-VlF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="knC-fa-Zea"/>
+                    <connections>
+                        <outlet property="authenticateTodoistButton" destination="bTx-Ru-RXq" id="9yQ-C9-a2r"/>
+                        <outlet property="authorizeRemindersButton" destination="XoY-Q7-CPh" id="uXK-Cu-MtM"/>
+                        <outlet property="letsgoButton" destination="Ljx-tf-Q8a" id="XLG-Rz-JQa"/>
+                        <segue destination="JjA-cA-1rM" kind="show" identifier="showAuth" id="ENr-am-u1v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="51t-qv-iKl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3921" y="893"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jij-sn-GGn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oPH-ft-buR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y2h-Sc-80t">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4NW-OI-2a2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CCO-aD-mUV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="542" y="70"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="goK-Ok-YV3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rKU-tk-ecP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xUW-ZU-IdT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eGr-KA-sjb" kind="relationship" relationship="rootViewController" id="Kck-Ca-0Q5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NHH-Om-26A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3109" y="893"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="a-bigger-splash" width="1536" height="1518"/>
+    </resources>
+</document>
